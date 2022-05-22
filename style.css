@@ -1,0 +1,62 @@
+* {
+    user-select: none;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+}
+
+.body {
+    font-family: "Lato", sans-serif;
+}
+
+#profile-pic {
+    height: 250px;
+    width: 250px;
+}
+
+#landing {
+    /* vh = viewport height | measured percentage of the height of the device */
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    /* center elements vertically if column, horizontally if row */
+    align-items: center;
+    justify-content: center;
+}
+
+.jumbotron {
+    background-color: transparent;
+}
+
+#gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 80vh;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+h2 {
+    color: #007bff;
+}
+
+.tools {
+    background-color: white;
+    /* line around element */
+    border: 5px solid #f2f2f2;
+    /* space outside of element */
+    margin: 20px;
+    padding: 20px;
+    /* based on the total width of the parent */
+    /* width: 75%; */
+}
+
+html {
+    scroll-behavior: smooth;
+}
