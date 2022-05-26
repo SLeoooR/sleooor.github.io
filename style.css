@@ -4,37 +4,75 @@
     -moz-user-select: none;
 }
 
-.body {
-    font-family: "Lato", sans-serif;
+html {
+    scroll-behavior: smooth;
 }
 
-#profile-pic {
-    height: 250px;
-    width: 250px;
+body {
+    font-family: 'Rubik', sans-serif;
+    background-image: url("images/backround.jpg");
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: both;
 }
 
-#landing {
-    /* vh = viewport height | measured percentage of the height of the device */
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    /* center elements vertically if column, horizontally if row */
-    align-items: center;
-    justify-content: center;
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
 }
 
-.jumbotron {
-    background-color: transparent;
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #main {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }
 
-#gallery {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 80vh;
-    border-top-left-radius: 1rem;
-    border-top-right-radius: 1rem;
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    #main {
+        margin-right: 5%;
+        margin-left: 5%;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    #main {
+        margin-right: 10%;
+        margin-left: 10%;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    #main {
+        margin-right: 20%;
+        margin-left: 20%;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #main {
+        margin-right: 30%;
+        margin-left: 30%;
+    }
+}
+
+hr.rounded {
+    border-top: 2px solid #343A40;
+    border-radius: 5px;
+    width: 100px;
 }
 
 ul {
@@ -42,21 +80,29 @@ ul {
     padding: 0;
 }
 
-h2 {
-    color: #007bff;
+p {
+    font-size: 20px;
 }
 
-.tools {
-    background-color: white;
-    /* line around element */
-    border: 5px solid #f2f2f2;
-    /* space outside of element */
-    margin: 20px;
-    padding: 20px;
-    /* based on the total width of the parent */
-    /* width: 75%; */
+.carousel-inner {
+    height: 500px;
 }
 
-html {
-    scroll-behavior: smooth;
+.carousel-item{
+    position: relative;
+    height:100%;
+}
+
+.landscape {
+    position: absolute;   
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.carousel-control-prev-icon {
+    background-image: url("images/arrow_left.png");
+}
+
+.carousel-control-next-icon {
+    background-image: url("images/arrow_right.png");
 }
