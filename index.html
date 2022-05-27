@@ -26,9 +26,9 @@
     </head>
     <body>
         <!-- Main Card -->
-        <div class="card border-0 text-center my-5 shadow rounded-lg" id="main">
+        <div class="card border-0 text-center shadow rounded-lg" id="main">
             <!-- Profile Pic -->
-            <img src="images/profile_pic.jpg" class="card-img-top px-0 rounded-top-lg" />
+            <img src="images/profile_pic.jpg" class="card-img-top px-0 rounded-top-lg" id="profile_pic" />
 
             <!-- Name & Role Section -->
             <section class="text-center py-5 bg-dark text-light" id="landing">
@@ -36,9 +36,11 @@
                 <h3>Junior Web/Android Developer</h3>
             </section>
 
+            <span id="about"></span>
+
             <!-- About Section -->
-            <div class="py-5 px-5 bg-light text-dark">
-                <section id="about">
+            <div class="p-5 bg-light text-dark">
+                <section>
                     <h3>About</h3>
                     <hr class="rounded" />
                     <p class="text-justify">
@@ -53,7 +55,7 @@
                 </section>
 
                 <!-- Skill Cards Section -->
-                <section id="about">
+                <section>
                     <div class="card shadow mb-3">
                         <div class="card-body">
                             <h4 class="text-center card-title">Languages</h4>
@@ -116,9 +118,11 @@
                 <hr />
             </section>
 
+            <span id="experience"></span>
+
             <!-- Experience Section -->
-            <div class="py-5 px-5 bg-light text-dark">
-                <section id="about">
+            <div class="p-5 bg-light text-dark">
+                <section>
                     <h3>Experience</h3>
                     <hr class="rounded" />
                     <p class="text-justify">
@@ -130,7 +134,7 @@
                     <div class="card shadow mb-3">
                         <h3 class="card-header card-title text-justify">OpenDota Reborn</h3>
                         <div id="carouselOpenDotaReborn" class="carousel slide card-img-top border-bottom" data-ride="carousel" data-interval="false">
-                            <div class="carousel-inner">
+                            <div class="carousel-inner portrait">
                                 <div class="carousel-item active">
                                     <img src="images/opendotareborn/1.jpg" class="h-100" />
                                 </div>
@@ -178,7 +182,7 @@
                     <div class="card shadow mb-3">
                         <h3 class="card-header card-title text-justify">PROXpress</h3>
                         <div id="carouselPROXpress" class="carousel slide card-img-top border-bottom" data-ride="carousel" data-interval="false">
-                            <div class="carousel-inner">
+                            <div class="carousel-inner portrait">
                                 <div class="carousel-item active">
                                     <img src="images/proxpress/1.png" class="h-100 border" />
                                 </div>
@@ -212,9 +216,6 @@
                                 <div class="carousel-item">
                                     <img src="images/proxpress/11.png" class="h-100 border" />
                                 </div>
-                                <div class="carousel-item position-relative">
-                                    <img src="images/proxpress/12.png" class="w-100 border landscape" />
-                                </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-target="#carouselPROXpress" data-slide="prev">
                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -227,8 +228,8 @@
                         </div>
                         <div class="card-body">
                             <p class="card-text text-justify">
-                                A Flutter mobile and web app, these are the product of my senior thesis together with Hans Pintor and Anselmo Oduca. This app is
-                                a platform for on-demand delivery services between customers and couriers.
+                                A Flutter mobile app, which the product of my senior thesis together with Hans Pintor and Anselmo Oduca. This app is a platform
+                                for on-demand delivery services between customers and couriers.
                             </p>
                         </div>
                         <div class="card-footer text-muted">
@@ -242,16 +243,16 @@
                         <div id="carouselGrayscale" class="carousel slide card-img-top border-bottom" data-ride="carousel" data-interval="false">
                             <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="images/grayscale_photography/1.png" class="w-100 landscape" />
+                                    <img src="images/grayscale_photography/1.png" class="w-100" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/grayscale_photography/2.png" class="w-100 landscape" />
+                                    <img src="images/grayscale_photography/2.png" class="w-100" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/grayscale_photography/3.png" class="w-100 landscape" />
+                                    <img src="images/grayscale_photography/3.png" class="w-100" />
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="images/grayscale_photography/4.png" class="w-100 landscape" />
+                                    <img src="images/grayscale_photography/4.png" class="w-100" />
                                 </div>
                             </div>
                             <button class="carousel-control-prev" type="button" data-target="#carouselGrayscale" data-slide="prev">
@@ -282,9 +283,11 @@
                 <hr />
             </section>
 
+            <span id="contact"></span>
+
             <!-- Contact Section -->
-            <div class="py-5 px-5 bg-light text-dark rounded-lg">
-                <section id="about">
+            <div class="p-5 mb-5 bg-light text-dark rounded-lg" id="nice">
+                <section>
                     <h3>Contact</h3>
                     <hr class="rounded" />
                     <p class="text-justify">I am usually in front of my desktop PC everyday so feel free to connect or contact me through these platforms:</p>
@@ -322,6 +325,23 @@
             </div>
         </div>
 
+        <nav class="navbar navbar-expand navbar-dark bg-dark fixed-bottom rounded-top" id="main">
+            <ul class="navbar-nav nav-fill w-100">
+                <li class="nav-item">
+                    <a class="nav-link" href="#profile_pic">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </nav>
+
         <!-- Modal -->
         <div class="modal" id="copyModal" tabindex="-1" aria-labelledby="copyModalLabel" aria-hidden="true">
             <div class="modal-dialog modal-dialog-centered">
@@ -340,6 +360,20 @@
             </div>
         </div>
 
+        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+        <script
+            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+            crossorigin="anonymous"
+        ></script>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+            crossorigin="anonymous"
+        ></script>
+
+        <script src="helpers/noframework.waypoints.min.js"></script>
+
         <!-- Personal Script -->
         <script>
             function copyToClipboard() {
@@ -352,17 +386,5 @@
                 $("#copyModal").modal("hide");
             }
         </script>
-
-        <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
-        <script
-            src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
-            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
-            crossorigin="anonymous"
-        ></script>
-        <script
-            src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-            integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-            crossorigin="anonymous"
-        ></script>
     </body>
 </html>

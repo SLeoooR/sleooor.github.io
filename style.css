@@ -35,6 +35,12 @@ body {
         margin-right: 0;
         margin-left: 0;
     }
+    .p-5 {
+        padding:1rem!important
+    }
+    .mb-5 {
+        margin-bottom:5rem!important
+    }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -84,19 +90,8 @@ p {
     font-size: 20px;
 }
 
-.carousel-inner {
+.portrait .carousel-item {
     height: 500px;
-}
-
-.carousel-item{
-    position: relative;
-    height:100%;
-}
-
-.landscape {
-    position: absolute;   
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
 }
 
 .carousel-control-prev-icon {
@@ -105,4 +100,9 @@ p {
 
 .carousel-control-next-icon {
     background-image: url("images/arrow_right.png");
+}
+
+.rounded-top {
+    border-top-left-radius: 1rem!important;
+    border-top-right-radius: 1rem!important;
 }
